@@ -29,7 +29,6 @@ struct ContentView: View {
                                 .frame(width: geo.size.width, height: geo.size.height)
                         )
                     
-                    // ACCORDION IN 3 PARTS:
                     VStack {
                         Text("ACCORDION DESIGN & SOUND LAB")
                             .shadow(color: .black, radius: 5, x: 2, y: 2)
@@ -42,8 +41,9 @@ struct ContentView: View {
                             )
                             .shadow(color: Color(Constant.shadowDark), radius: 15, x: 5, y: 5)
                         
-                            .padding()
+                            .padding(.top, 60)
                         
+                        // MARK: TAP ON ACCORDION PARTS:
                         HStack(spacing: 0) {
                             NavigationLink(value: "RightHandSide") {
                                     Image("RightHandSide")
@@ -82,6 +82,18 @@ struct ContentView: View {
                             Color(Constant.mauveDusk).opacity(0.5)
                                 .cornerRadius(55)
                         )
+                        .padding()
+                        
+                        ScrollView {
+                            Text("Harmonika je veoma kompleksan tehnicki sistem, sa relativno velikim brojem podsklopova, funkcionalinh komponenti i razlicitih delova, koji mora imati veliku pouzdanost, dugotrajnu vremensku postojanost, funkcionalnu ponovljivost i stabilnost mehanickog sistema. Harmonika se sastoji od 3 osnovna dela, koji predstavljaju tri nezavisne celine:")
+                            
+                            Spacer()
+                            
+                            Text("• Desna strana, funkcionalno integrisana u okviru desnog polukorspusa(Tap left to see)\n• Meh, koji povezuje desnu i levu stranu (Tap middle to see)\n• Leva strana, funkcionalno integrisana u okviru levog polukorpusa (Tap right to see)")
+
+                        }
+                        .font(.system(size: 18))
+                        .foregroundColor(Color(Constant.mauveLight))
                         .padding()
                     }
                 }
