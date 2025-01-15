@@ -1,0 +1,19 @@
+[
+    {
+      "id" : 1,
+      "name" : "Osnovni delovi harmonike",
+      "description" : "Harmonika je veoma kompleksan tehnicki sistem, sa relativno velikim brojem podsklopova, funkcionalnih komponenti i razlicitih delova, koji mora imati veliku pouzdanost, dugotrajnu vremensku postojanost, funkcionalnu ponovljivost i stabilnost mehanickog sistema. Harmonika se sastoji od tri osnovna dela, koja predstavljaju tri nezavisne funkcionalne celine (slika 7.1)",
+      "bullets" : [
+          "• Desna strana, funkcionalno integrisana u okviru desnog polukorpusa harmonike,",
+          "• Leva straba, funkcionalno integrisana u okviru levog polukorpusa harmonike i",
+          "• Meh, koji povezuje desnu stranu i predstavlja vazdusnu komporu harmonike."
+          ]
+    },
+    
+    {
+        "id" : 2,
+        "name" : "Leva Strana harmonike",
+        "description" : "Ovde cemo pisati tekst leve strane harmonike",
+        "bullets" : []
+    },
+]
