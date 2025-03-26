@@ -8,36 +8,26 @@
 import SwiftUI
 
 struct BackgroundOverlay: View {
-    let geo: GeometryProxy
-
+    
     var body: some View {
-        Image("background")
-            .resizable()
-            .scaledToFill()
-            .frame(width: geo.size.width, height: geo.size.height)
-            .overlay(
-                Rectangle()
-                    .fill(Color(ColorPalette.mauveDusk)).opacity(0.1)
-                    .frame(width: geo.size.width, height: geo.size.height)
-            )
-            .overlay {
-                LinearGradient(stops: [
-                    Gradient.Stop(color: .clear, location: 0),
-                    Gradient.Stop(color: .mauveDark, location: 0.52),
-                    Gradient.Stop(color: .mauveDusk, location: 0.53),
-                    Gradient.Stop(color: .clear, location: 1),
-                ] , startPoint: .top, endPoint: .bottom)
-                .blur(radius: 10)
-            }
+        VStack {
+            Image("background")
+                .resizable()
+                .scaledToFill()
+                .opacity(0.5)
+                .brightness(0.7)
+                .overlay {
+                    Rectangle()
+                        .fill(Color.colorA5).opacity(0.5)
+                }
+        }
+        .ignoresSafeArea()
     }
 }
 
 struct BackgroundOverlay_Previews: PreviewProvider {
     static var previews: some View {
-        GeometryReader { geo in
-            BackgroundOverlay(geo: geo)
-        }
-        .previewLayout(.sizeThatFits)
-//        .frame(width: 400, height: 300)
+        BackgroundOverlay()
     }
 }
+

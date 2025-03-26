@@ -17,15 +17,18 @@ struct CategoryItemView: View {
     var body: some View {
         
         ZStack(alignment: .bottom) {
-            Image("icon_reed_block")
-                .renderingMode(.template)
+            Image("icon_reg_right")
+                .renderingMode(.original)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 110, height: 100, alignment: .center)
+                .scaleEffect(0.8)
+                .offset(y: -10)
+                .frame(width: 110, height: 110, alignment: .center) // 110 110
                 .background (
-                    Rectangle()
-                        .stroke(Color.colorB4, lineWidth: 2)
-                        .frame(width: 148, height: 138)
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.colorA4)
+                        .stroke(Color.colorA3, lineWidth: 1.5)
+                        .frame(width: 148, height: 138) // 148 138
                 )
             
             Text("Reed Block")
@@ -33,16 +36,17 @@ struct CategoryItemView: View {
                 .fontWeight(.black)
                 .foregroundColor(.white)
                 .background(
-                    Rectangle()
-                        .fill(Color.colorB4)
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(Color.colorA3)
                         .frame(width: 148, height: 31)
+//                        .cornerRadius(3)
                 )
-                .offset(x: 0, y: 12)
+                .offset(x: 0, y: 8)
             
         }
         .contentShape(Rectangle())
-        .padding(-2)
-        .scaleEffect(0.7)
+//        .padding(-2)
+//        .scaleEffect(0.7)
         .onTapGesture {
             print("kliknuo")
         }

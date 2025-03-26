@@ -24,6 +24,7 @@ enum ColorPalette {
     static let colorA2 = "ColorA2"
     static let colorA3 = "ColorA3"
     static let colorA4 = "ColorA4"
+    static let colorA5 = "ColorA5"
     
     // Palette 2
     static let colorB1 = "ColorB1"
@@ -31,11 +32,12 @@ enum ColorPalette {
     static let colorB3 = "ColorB3"
     static let colorB4 = "ColorB4"
     
-    // Palette 3
+    // Palette 3 (Sand and Sea)
     static let colorC1 = "ColorC1"
     static let colorC2 = "ColorC2"
     static let colorC3 = "ColorC3"
     static let colorC4 = "ColorC4"
+    static let colorC5 = "ColorC5"
     
     // Shadows
     static let shadowDark = "ColorBlackTransparentDark"

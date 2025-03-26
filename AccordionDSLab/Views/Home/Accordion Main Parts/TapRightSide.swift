@@ -9,16 +9,14 @@ import SwiftUI
 
 struct TapRightSide: View {
     var body: some View {
-        GeometryReader { geo in
             ZStack {
-                BackgroundOverlay(geo: geo)
                 
                 VStack(spacing: 20) {
                     
                     Image("RightHandSide")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: geo.size.width, height: geo.size.height / 2)
+                        .frame(width: 300, height: 200)
                         .padding(.top, 60)
                     
                   
@@ -29,10 +27,7 @@ struct TapRightSide: View {
                 }
             }
         }
-        .ignoresSafeArea()
-        
     
-    }
 }
 
 #Preview {

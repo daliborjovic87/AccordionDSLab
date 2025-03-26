@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct AccordionDSLabApp: App {
@@ -13,5 +14,6 @@ struct AccordionDSLabApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: ShengSections.self)
     }
 }

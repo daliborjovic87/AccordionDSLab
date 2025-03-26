@@ -31,9 +31,9 @@ struct TapLeftSide: View {
                 )
                     .gesture(
                     MagnificationGesture()
-                        .onChanged({ value in
+                        .onChanged { value in
                             scale = max(1.0, min(value.magnitude, 5)) // Limitiranje faktora uvećanja na između 1 i 5 puta originalne veličine.
-                        })
+                        }
                         // Resetiranje faktora uvećanja nakon što prestane gesta (opcionalno)
                         //.onEnded { _ in scale = 1.0 }
                 )

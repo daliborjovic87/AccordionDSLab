@@ -10,8 +10,8 @@ import SwiftUI
 struct CategoryGridView: View {
     
     let rows = [
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)) // Visina reda je fiksna na 150 jedinica
+        GridItem(.fixed(150)),
+        GridItem(.fixed(150)) // Visina reda je fiksna na 150 jedinica
     ]
     
     var body: some View {
@@ -19,9 +19,10 @@ struct CategoryGridView: View {
             ForEach(0..<9, id: \.self) { value in
                 CategoryItemView()
                     .background(Color.white)
+                    .padding(25)
             }
         }
-        .padding()
+        .scaleEffect(0.8)
     }
 }
 

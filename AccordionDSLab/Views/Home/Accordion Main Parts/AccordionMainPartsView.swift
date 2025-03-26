@@ -15,8 +15,8 @@ struct AccordionMainParts: View {
             GeometryReader { geo in
                 ZStack {
                     // MARK: - BACKGROUND IMAGE
-                    
-                    BackgroundOverlay(geo: geo)
+//                    
+//                    BackgroundOverlay(geo: geo)
                     
                     VStack {
                         Text("The Main Parts of the Accordion")
