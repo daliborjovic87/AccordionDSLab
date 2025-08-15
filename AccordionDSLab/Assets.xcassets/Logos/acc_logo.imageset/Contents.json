@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "acc_logo.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "acc_logo@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "acc_logo@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "acc_logo.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {

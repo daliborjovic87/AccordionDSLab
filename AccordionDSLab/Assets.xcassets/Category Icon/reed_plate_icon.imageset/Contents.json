@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "reed_plate_icon.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

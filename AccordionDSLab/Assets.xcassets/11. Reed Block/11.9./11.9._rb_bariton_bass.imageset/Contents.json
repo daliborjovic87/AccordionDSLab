@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "11.9._rb_bariton_bass.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "11.9._rb_bariton_bass@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "11.9._rb_bariton_bass@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
